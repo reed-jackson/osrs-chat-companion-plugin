@@ -1,0 +1,11 @@
+# OSRS Chat Companion
+
+Always follow [osrs-chat-companion-brief.md](osrs-chat-companion-brief.md).
+
+## Hard rules
+- Read/advise only — never automate game input or send client actions.
+- No LLM API keys in this repo or the built jar.
+- No network calls in Phase 1; player state is local-only via the Client API.
+- Target Java 11. Keep package/config names as `com.osrschatcompanion` / `osrsChatCompanion`.
+- Third-party chat features must stay opt-in with the Plugin Hub disclosure/warning text.
+- Prefer RuneLite idioms: Guice `@Inject`, `ClientThread` for Client API reads from Swing, injected `Gson`.
